@@ -5,7 +5,19 @@
 </head>
 <body>
   <div class="heroImage">
-    <% include ./partials/navBar %>
+    <h1 class="header">STAR WARS</h1>
+    <% include partials/navBar %>
+  </div>
+  <div class="container">
+    <div class="row">
+      <% for(var i=0; i<movies.length; i++) { %>
+        <div class="col-lg-4 movieImageContainer">
+          <a href="/eposides/<%= movies[i].episode_number %>">
+            <img class="movieImage img-circle img-responsive img-center" src="/images/<%= movies[i].poster %>">
+          </a>
+        </div>
+      <% } %>
+    </div>
   </div>
   <% include partials/script.ejs %>
 </body>

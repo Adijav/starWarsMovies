@@ -6,7 +6,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MOVIES <span class="caret"></span></a>
         <ul class="dropdown-menu starWarsMoviesDropdown">
           <% for(var i=0; i<movies.length; i++) { %>
-            <li><a href="#"><%= movies[i].title %></a></li>
+            <li><a href="/eposides/<%= movies[i].episode_number %>"><%= movies[i].title %></a></li>
           <% } %>
         </ul>
       </li>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include head.ejs %>
+</head>
+<body>
+  <div class="eposideImage">
+    <h1 class="eposideHeader"><%= title %></h1>
+    <% include navBar %>
+    <div class="posterImage">
+      <img src="/images/<%= hero %>">
+    </div>
+  </div>
+  <div class="movieDetails container">
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="movieImage img-circle img-responsive img-center" src="/images/<%= poster %>">
+      </div>
+      <div class="col-lg-8 movieDescription">
+        <h2><%= title %></h2>
+        <h3>
+          <%= description %>
+          <div class="mainCharacters">Main Characters :</div>
+          <%= mainCharacters %>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <% include script.ejs %>
+</body>
+</html>

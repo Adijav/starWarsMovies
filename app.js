@@ -12,7 +12,7 @@ var routes = require('./routes');
 
 app.get("/", routes.home);
 
-app.get("/eposide/:eposideNumber?", routes.eposides);
+app.get("/eposides/:eposideNumber?", routes.eposides);
 
 app.get("*", routes.notFound);
 
