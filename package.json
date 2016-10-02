@@ -16,6 +16,10 @@
   "bugs": {
     "url": "https://github.com/Adijav/starWarsMovies/issues"
   },
+  "engine": {
+    "node": "4.2.x",
+    "npm": "2.14.x"
+  },
   "dependencies": {
     "ejs": "^2.4.1",
     "express": "^4.13.4"
